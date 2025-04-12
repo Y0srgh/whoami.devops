@@ -21,8 +21,11 @@ pipeline {
 
         stage('Push to Docker Hub') {
             steps {
-                withDockerRegistry([credentialsId: DOCKER_CREDENTIALS_ID, url: '']) {
-                    sh "docker push $DOCKER_IMAGE"
+                dir('/home/vagrant/jenkins'){
+
+                    withDockerRegistry([credentialsId: DOCKER_CREDENTIALS_ID, url: '']) {
+                        sh "docker push $DOCKER_IMAGE"
+                    }
                 }
             }
         }
