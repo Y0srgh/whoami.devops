@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Y0srgh/my-portfolio.git'
+                git branch: 'master', url: 'https://github.com/Y0srgh/whoami.dev.git'
             }
         }
     }
