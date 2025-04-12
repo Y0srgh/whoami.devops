@@ -16,6 +16,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 dir('/home/vagrant/jenkins'){
+                    sh 'ls'
                     sh 'docker build -t $IMAGE_NAME .'
 
                 }
