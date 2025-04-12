@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/k8s-master":{"guestpath":"/home/vagrant/k8s-master","hostpath":"C:/Users/ghozz/whoami.devops/k8s","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/ghozz/whoami.devops","disabled":false,"__vagrantfile":true}}}
