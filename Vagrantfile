@@ -7,6 +7,9 @@ Vagrant.configure("2") do |config|
         vb.memory = 2048
         vb.cpus = 2
       end
+
+      jenkins.vm.synced_folder "./jenkins", "/home/vagrant/jenkins"
+      jenkins.vm.synced_folder "./jenkins", "/jenkins2"
       jenkins.vm.provision "shell", inline: <<-SHELL
         sudo apt update
         sudo apt install -y openjdk-11-jdk git

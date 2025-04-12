@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/ghozz/whoami.devops","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/home/vagrant/jenkins":{"guestpath":"/home/vagrant/jenkins","hostpath":"C:/Users/ghozz/whoami.devops/jenkins","disabled":false,"__vagrantfile":true},"/jenkins2":{"guestpath":"/jenkins2","hostpath":"C:/Users/ghozz/whoami.devops/jenkins","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/ghozz/whoami.devops","disabled":false,"__vagrantfile":true}}}
