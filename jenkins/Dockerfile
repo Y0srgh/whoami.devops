@@ -1,17 +1,15 @@
 FROM node:20-slim AS build-stage
 
-WORKDIR /app
+WORKDIR /project
 
 COPY package*.json .
 
-CMD ["ls"]
+RUN npm install
 
-# RUN npm install
+COPY . .
 
-# COPY . .
+COPY . .
 
-# COPY . .
+EXPOSE 4000
 
-# EXPOSE 4000
-
-# CMD ["npm", "run", "serve:ssr:frontend"]
+CMD ["npm", "run", "serve:ssr:frontend"]
