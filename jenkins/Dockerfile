@@ -1,6 +1,6 @@
 FROM node:20-slim AS build-stage
 
-WORKDIR /app
+WORKDIR /
 
 COPY package*.json ./
 
