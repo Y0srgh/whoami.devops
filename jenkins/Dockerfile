@@ -1,8 +1,8 @@
 FROM node:20-slim AS build-stage
 
-WORKDIR /
+WORKDIR /app
 
-COPY package*.json ./
+COPY package*.json ./app
 
 RUN npm install
 
