@@ -1,8 +1,8 @@
 FROM node:20-slim AS build-stage
 
-WORKDIR /project/app
+WORKDIR /app
 
-COPY /var/jenkins_home/workspace/portfolio-pipeline/package*.json ./
+COPY package*.json ./
 
 RUN npm install
 
