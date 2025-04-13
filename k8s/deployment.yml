@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: y0srgh/whoami.dev:latest
+          image: y0srgh/portfolio:latest
           ports:
             - containerPort: 4000
 ---
