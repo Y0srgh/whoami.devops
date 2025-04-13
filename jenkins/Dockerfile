@@ -1,10 +1,12 @@
 FROM node:20-slim AS build-stage
 
-WORKDIR /portfolio-front
+WORKDIR /app
 
 COPY package*.json ./
 
 RUN npm install
+
+COPY . .
 
 COPY . .
 
