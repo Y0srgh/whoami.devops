@@ -19,12 +19,12 @@ pipeline {
             }
         }
 
-        // stage('Push to Docker Hub') {
-        //     steps {
-        //         withDockerRegistry([credentialsId: DOCKER_CREDENTIALS_ID, url: '']) {
-        //             sh "docker push $DOCKER_IMAGE"
-        //         }
-        //     }
-        // }
+        stage('Push to Docker Hub') {
+            steps {
+                withDockerRegistry([credentialsId: DOCKER_CREDENTIALS_ID, url: '']) {
+                    sh "docker push $DOCKER_IMAGE"
+                }
+            }
+        }
     }
 }
