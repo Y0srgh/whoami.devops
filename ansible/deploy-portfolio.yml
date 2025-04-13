@@ -1,8 +1,0 @@
-- hosts: all
-  become: true
-  tasks:
-    - name: Apply Kubernetes manifests
-      shell: |
-        kubectl apply -f /home/vagrant/k8s/namespace.yaml
-        kubectl apply -f /home/vagrant/k8s/deployment.yaml
-        kubectl apply -f /home/vagrant/k8s/service.yaml

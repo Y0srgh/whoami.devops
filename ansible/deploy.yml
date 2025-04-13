@@ -1,0 +1,11 @@
+- name: Deploy application to Kubernetes
+  gather_facts: no
+  hosts: kubernetes_master
+  tasks:
+    - name: Copy deployment file
+      copy:
+        src: /home/vagrant/ansible/deployment.yml
+        dest: /home/vagrant/k8s-master/deployment.yml
+
+    - name: Apply Kubernetes Deployment
+      command: kubectl apply -f /home/vagrant/k8s-master/deployment.yml
